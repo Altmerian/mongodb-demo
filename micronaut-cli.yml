@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.pshakhlovich.mongodb
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, github-workflow-ci, gradle, http-client-test, java, java-application, jib, logback, lombok, micronaut-aot, micronaut-build, micronaut-http-validation, mongo-sync, netty-server, readme, serialization-jackson, shade, spock, static-resources, test-resources, validation, yaml, yaml-build]

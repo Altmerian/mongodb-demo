@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: mongodb-demo
+
+mongodb:
+  uri: mongodb+srv://${mongo.account}:${mongo.key}@${mongo.host}/?retryWrites=true&w=majority&appName=mongodb-demo
