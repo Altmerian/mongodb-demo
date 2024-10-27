@@ -31,8 +31,8 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = JavaVersion.toVersion("21")
-    targetCompatibility = JavaVersion.toVersion("21")
+    sourceCompatibility = JavaVersion.toVersion("23")
+    targetCompatibility = JavaVersion.toVersion("23")
 }
 
 application {
@@ -41,7 +41,7 @@ application {
 }
 
 tasks.withType(JavaCompile).each {
-    it.options.compilerArgs.addAll('--enable-preview', '--release', '21')
+    it.options.compilerArgs.addAll('--enable-preview', '--release', '23')
 }
 
 
@@ -76,9 +76,8 @@ micronaut {
     }
 }
 
-
 tasks.named("dockerfileNative") {
-    jdkVersion = "21"
+    jdkVersion = "23"
 }
 
 
